@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/update"
+        android:title="@string/update"
+        app:showAsAction="never"/>
+    <item android:id="@+id/filter"
+        android:title="@string/filter"
+        app:showAsAction="never"/>
+    <item android:id="@+id/exportData"
+        android:title="@string/exportData"
+        app:showAsAction="never"/>
+    <item android:id="@+id/importData"
+        android:title="@string/importData"
+        app:showAsAction="never"/>
+    <item android:id="@+id/stopFilter"
+        android:title="@string/stopFilter"
+        app:showAsAction="always"/>
+</menu>

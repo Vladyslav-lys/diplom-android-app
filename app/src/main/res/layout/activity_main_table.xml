@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context=".MainTable">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/columnTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:text="@string/title"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/columnData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:text="@string/dat"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/plombTitleNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/pnum"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/plombNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                tools:ignore="LabelFor"
+                tools:targetApi="o" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/dateIssueTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/diss"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/dateIssue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                tools:ignore="LabelFor,TextFields"
+                tools:targetApi="o" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/whomIssueTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/whomiss"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                tools:ignore="LabelFor" />
+
+            <Spinner
+                android:id="@+id/whomIssue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/dateSetTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/dset"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/dateSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                tools:ignore="LabelFor,TextFields"
+                tools:targetApi="o" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/enterpriseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/enter"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/enterprise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/locoNumTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/lnum"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/locoNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/seriaTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/ser"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/seria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/setPlaceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/pset"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/setPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/dateOffTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/doff"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/dateOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                tools:ignore="LabelFor,TextFields"
+                tools:targetApi="o" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/adjusterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/adjustr"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/adjuster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/causeOffTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/cous"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/causeOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                tools:ignore="LabelFor"
+                tools:targetApi="o" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/getterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/iss"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/getter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/commentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/comm"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                tools:ignore="LabelFor"
+                tools:targetApi="o" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:background="#1f639e">
+
+            <TextView
+                android:id="@+id/stockedTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1f639e"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="@string/stockedT"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/stocked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                tools:ignore="LabelFor"
+                tools:targetApi="o" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonPrev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/n" />
+
+            <EditText
+                android:id="@+id/textId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                tools:ignore="LabelFor"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/p" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

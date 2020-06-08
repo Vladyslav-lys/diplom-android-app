@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">diplom</string>
+    <string name="buttonViewPlomb">Обзор пломб</string>
+    <string name="buttonAddPlomb">Добавить пломбы</string>
+    <string name="textViewSome1">"Пломбы с № "</string>
+    <string name="textViewSome3">"выданы "</string>
+    <string name="textViewSome2">"по № "</string>
+    <string name="buttonCancel">Отмена</string>
+    <string name="buttonAdd">Добавить</string>
+    <string name="textOnePlomb1">Пломба №</string>
+    <string name="n"><![CDATA[<]]></string>
+    <string name="stockedT">дата сдачи на склад</string>
+    <string name="p"><![CDATA[>]]></string>
+    <string name="comm">Комментарий</string>
+    <string name="iss">принял</string>
+    <string name="cous">причина снятия</string>
+    <string name="adjustr">наладчик</string>
+    <string name="doff">дата снятия</string>
+    <string name="pset">Место установки</string>
+    <string name="lnum">номер</string>
+    <string name="ser">серия</string>
+    <string name="enter">предприятия</string>
+    <string name="dset">дата установки</string>
+    <string name="whomiss">кому выдано</string>
+    <string name="diss">дата выдачи</string>
+    <string name="pnum">№ пломбы</string>
+    <string name="title">Название</string>
+    <string name="dat">Данные</string>
+    <string name="stopFilter">Назад</string>
+    <string name="update">Обновить</string>
+    <string name="filter">Фильтр данных</string>
+    <string name="exportData">Экспорт данных</string>
+    <string name="importData">Импорт данных</string>
+
+    <string-array name="addPlombs">
+        <item>Добавить одну пломбу</item>
+        <item>Добавить несколько пломб</item>
+    </string-array>
+</resources>
